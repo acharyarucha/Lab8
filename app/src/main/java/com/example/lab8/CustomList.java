@@ -52,7 +52,7 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public void addCity(City city){
-        //cities.add(city);
+        cities.add(city);
     }
 
     public Boolean hasCity(City city) {
@@ -62,12 +62,12 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public void delete(City city){
-//        if (cities.contains(city)) {
-//            cities.remove(city);
-//        }
-//        else{
-//            throw new IllegalArgumentException();
-//        }
+        if (cities.contains(city)) {
+            cities.remove(city);
+        }
+        else{
+            throw new IllegalArgumentException();
+        }
     }
 
 }
